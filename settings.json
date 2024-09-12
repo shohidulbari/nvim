@@ -1,0 +1,51 @@
+ {
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.external.osxExec": "xterm",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "One Dark Pro",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        },
+        { "before": ["<S-h>"], "commands": [":bprevious"]},
+        { "before": ["<S-l>"], "commands": [":bnext"]},
+        { "before": ["leader", "leader"], "commands": ["workbench.action.quickOpen"]},
+        { "before": ["<S-k>"], "commands": ["editor.action.showDefinitionPreviewHover"]},
+        { "before": ["<C-l>"], "commands": ["workbench.action.focusRightGroup"]},
+        { "before": ["<C-h>"], "commands": ["workbench.action.focusLeftGroup"]},
+        { "before": ["<C-j>"], "commands": ["workbench.action.focusBelowGroup"]},
+        { "before": ["<C-k>"], "commands": ["workbench.action.focusAboveGroup"]},
+        { "before": ["leader", "s", "g"], "commands": ["workbench.view.search"]},
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "workbench.editor.enablePreview": false,
+    "editor.fontSize": 13
+}
