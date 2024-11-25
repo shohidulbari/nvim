@@ -10,7 +10,7 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  { "gruvbox-community/gruvbox", init = function() vim.g.gruvbox_contrast_dark = "hard" end },
 
   -- Configure LazyVim to load gruvbox
   {
